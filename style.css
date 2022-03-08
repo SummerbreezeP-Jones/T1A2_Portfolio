@@ -12,6 +12,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
+   
 }
 
 
@@ -22,14 +23,14 @@
  }
  .navbar ul li{
       font-family: century;
-      font- size: 1.1rem;
+      font- size: 1rem;
       font-weight: bold;
 
  }
 .navbar ul li a{
     text-decoration: none;
     color: white;
-    padding: 8px  25px;
+    padding: 8px  20px;
     transition: all. 5s ease;
 }
 .navbar ul li a:hover{
@@ -53,6 +54,7 @@
         right: 0;
         height: 100%;
         width: 100%;
+        z-index: -1;
  
  
      }
@@ -79,3 +81,22 @@
      display: flex;
      flex-direction: column;
  }
+ #pb{
+     display: flex;
+     flex-direction: column;
+ }
+ .btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
