@@ -1,3 +1,6 @@
 # T1A2_Portfolio
 ## Summerbreeze Paku
-to be honest im a bit lost
+
+Challenges I have faced:
+* connecting all my pages to one style sheet
+* 
