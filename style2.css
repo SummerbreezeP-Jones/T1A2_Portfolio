@@ -3,6 +3,8 @@
         padding: 0;
         box-sizing: border-box;
       } 
+
+      /* navigation bar */
     .navbar{
         display: flex;
         justify-content: center;
@@ -19,7 +21,7 @@
      }
      .navbar ul li{
           font-family: century;
-          font- size: 1rem;
+          font-size: 1rem;
           font-weight: bold;
     
      }
@@ -27,26 +29,97 @@
         text-decoration: none;
         color: white;
         padding: 8px  20px;
-        transition: all. 5s ease;
+        transition: all 5s ease;
     }
     .navbar ul li a:hover{
         background-color: white;
         color: black;
         box-shadow: 0 0 10px green; 
     }
+
+
  /* Blogs Page */
-  #blogs{
-      display: flex
-      flex-direction: column;
-  }
- 
+ #blogs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
  .headings{
     font-family: century;
     font-size: 3rem;
     text-align: center;
     margin: 40px 0px;
+    }
+ .sub-headings{
+     
+     color: darkolivegreen;
+     font-size: 1.5rem;
+     font-weight: 300;}
+     
+     
+section{
+     min-height: 100vh;
+     padding: 2rem 0;
  }
-  .container {
- width: 1000px;
- height: 500px;
+
+ .blog-container{
+     width:100%
+     max-width: 1160px;
+     padding: 0 20px;
+     margin: 0 auto;
  }
+
+ .grid{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(270px, 1fr)) ;
+     gap: 2rem;
+     align-items: stretch;   
+ }
+ .blog_card{
+     display: flex;
+     flex-direction: column;
+     border-radius: 30px;
+     box-shadow: 1px 2px 10px rgba(0, 0, 0 , 0.2333);
+ }
+ .blog_img{
+     height: 300px;
+     border-radius: 30px;
+     overflow: hidden;
+
+ }
+ .blog_img img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+ .blog-text{
+ padding: 1.2rem;
+ }
+
+ .blog-text .readmore{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+ .blog-text .title{
+     margin: 2rem 0;
+ }
+
+ ion-icon{
+ color:green;
+ vertical-align: middle;
+ font-size: 1.2rem;
+ margin-right: .5rem;
+ }
+
+ .blog-text .readmore .btn{
+   text-decoration: none;
+   color: black;
+   font-weighht: 400;  
+ }
+
+
+ 

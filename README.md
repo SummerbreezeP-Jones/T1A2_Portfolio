@@ -2,5 +2,5 @@
 ## Summerbreeze Paku
 
 Challenges I have faced:
-* connecting all my pages to one style sheet
-* 
+* connecting all my pages to one style sheet (in the end i ended up using two sheets)
+* searching online for solutions to fix my coding but also trying to understand where i went wrong.
