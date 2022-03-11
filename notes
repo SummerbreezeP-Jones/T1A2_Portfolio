@@ -67,3 +67,68 @@ blog html: <div id="blogs">
     color: olivedrab;
     font-size: 0.9rem;
 }
+
+display: grid;
+     grid-template-columns: 1fr 1fr ;
+     gap: 2rem;
+     align-items: stretch;  
+
+
+
+
+     grid{
+        display:grid;
+        padding: 16px;
+        grid-gap: 16px;
+        }
+   
+   
+    @media only screen and (min-width: 768px) {
+           .grid{
+           grid-template-columns: repeat(1fr, 1fr);
+           }
+        }
+   
+    @media only screen and (min-width: 960px) {
+           .grid{
+           grid-template-columns: repeat(1fr, 1fr, 1fr);
+           }
+        }
+    @media only screen and (min-width: 1200px) {
+           .grid{
+           grid-template-columns: repeat(2,1fr);
+           }
+        }
+
+
+
+
+
+
+
+
+
+
+        .grid{
+            display:grid;
+            padding: 16px;
+            grid-gap: 16px;
+            }
+       
+       
+        @media only screen and (min-width: 390px) {
+               .grid{
+               grid-template-columns: repeat(1fr, 1fr);
+               }
+            }
+       
+        @media only screen and (min-width: 768px) {
+               .grid{
+               grid-template-columns: (1fr, 1fr, 1fr, 1fr);
+               }
+            }
+            @media only screen and (min-width: 1024px) {
+               .grid{
+               grid-template-columns: repeat(1fr, 1fr, 1fr);
+               }
+            }

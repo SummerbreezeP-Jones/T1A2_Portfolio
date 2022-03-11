@@ -36,90 +36,76 @@
         color: black;
         box-shadow: 0 0 10px green; 
     }
-
-
- /* Blogs Page */
- #blogs{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
- }
- .headings{
-    font-family: century;
-    font-size: 3rem;
-    text-align: center;
-    margin: 40px 0px;
-    }
- .sub-headings{
-     
-     color: darkolivegreen;
-     font-size: 1.5rem;
-     font-weight: 300;}
-     
-     
-section{
-     min-height: 100vh;
-     padding: 2rem 0;
- }
-
- .blog-container{
-     width:100%
-     max-width: 1160px;
-     padding: 0 20px;
-     margin: 0 auto;
- }
-
- .grid{
-     display: grid;
-     grid-template-columns: repeat(auto-fit,minmax(270px, 1fr)) ;
-     gap: 2rem;
-     align-items: stretch;   
- }
- .blog_card{
-     display: flex;
-     flex-direction: column;
-     border-radius: 30px;
-     box-shadow: 1px 2px 10px rgba(0, 0, 0 , 0.2333);
- }
- .blog_img{
-     height: 300px;
-     border-radius: 30px;
-     overflow: hidden;
-
- }
- .blog_img img{
-     height: 100%;
-     width: 100%;
-     object-fit: cover;
-     object-position: center;
- }
- .blog-text{
- padding: 1.2rem;
- }
-
- .blog-text .readmore{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-
- }
- .blog-text .title{
-     margin: 2rem 0;
- }
-
- ion-icon{
- color:green;
- vertical-align: middle;
- font-size: 1.2rem;
- margin-right: .5rem;
- }
-
- .blog-text .readmore .btn{
-   text-decoration: none;
-   color: black;
-   font-weighht: 400;  
- }
-
+    
+    body {
+        font-family: "Quicksand", sans-serif;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background: 
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin-block: 2rem;
+        gap: 2rem;
+      }
+      
+      img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+      
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: clamp(20rem, calc(20rem + 2vw), 22rem);
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        background: #ECE9E6;
+      background: linear-gradient(to right, #158346, #0e4434);
+      
+      }
+      
+      
+      .card__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+      }
+      
+      
+      
+      
+      
+      .card__body h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+      }
+      
+      .card__footer {
+        display: flex;
+        padding: 1rem;
+        margin-top: auto;
+      }
+      
+      .ion-icon{
+        color:green;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        margin-right: .5rem;
+        }
+       
+        .readmore .btn{
+          text-decoration: none;
+          color: black;
+          font-weight: 400;  
+        }
 
  

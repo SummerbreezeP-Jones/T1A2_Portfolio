@@ -33,7 +33,7 @@
     text-decoration: none;
     color: white;
     padding: 8px  20px;
-    transition: all. 5s ease;
+    transition: all 5s ease;
 }
 .navbar ul li a:hover{
     background-color: white;
@@ -82,6 +82,7 @@
   @media screen and (Max-width: 600px) {
     .headings{
      font-size: 40px;
+     
     }
 
 
