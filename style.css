@@ -8,7 +8,7 @@
 /* Navbar */
 
 .navbar{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -22,10 +22,11 @@
  display: flex;
  list-style: none;
  margin: 20px 0px;
+ opacity: 1.5;
  }
  .navbar ul li{
-      font-family: century;
-      font- size: 1rem;
+      font-family: 'Noto Serif Display', serif;
+      font-size: 1rem;
       font-weight: bold;
 
  }
@@ -40,75 +41,119 @@
     color: black;
     box-shadow: 0 0 10px green; 
 }
- /* Home Section */
- #home{
-     display: flex;
-     flex-direction: column;
-     background-color: rgba(0, 0, 0, 0.5);
-     height: 840px;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     background: url('img/hpback.jpg') no-repeat center center/cover;
-     position: absolute;
-     
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
  
- 
-     }
-
-
- .main{
-     Display: flex;
-     flex-direction: column;
-     align-items: center;
-     position: absolute;
-     top: 40%;
-     
- }
-
-
- .headings{
+.headings{
     font-family: century;
-    font-size: 3rem;
+    font-size: 60px;
     text-align: center;
     margin: 40px 0px;
+    color: white;
     }
+
+/* Home Section */
+ #home{
+  background-color:#9DAD83;
+  position: absolute;
+   height: 100%;
+     width: 100%;
+     z-index: -1;
+ } 
+
+  .main{
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+    
+  }
+
+
+ 
 
   @media screen and (Max-width: 600px) {
     .headings{
      font-size: 40px;
-     
+    }
+  }
+
+ /* About & Professional Knowledge Page */
+ 
+ #about{
+ background: url('img/polaroid5.jpg');
+ background-size: cover;
+ background-repeat: no-repeat; 
+}
+ .headings_a{
+   font-family: century;
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0px;
+    color: white;
+  text-shadow: 2px 2px black; 
+ }
+
+ .about_container{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 2rem;
+ padding-block: 10px;
+ }
+
+ .about_card{
+   background-color:rgba(74, 150, 105, 0.5);
+   box-shadow: 5px 5px black;
+   outline-style: solid black;
+   display:flex;
+   flex-direction: column;
+   padding: 20px;
+   width: 550px;
+   height: 550px;
+ 
+
+ }
+
+.text_about{
+  color: white;
+ font-weight: 300;
+ padding: 10px;
+
+
+}
+.img_about{
+  height: auto;
+  width: auto;
+}
+
+ @media only screen and (max-width: 768px) {
+  .img_about{
+    width: auto;
+    }
+    .about_container{
+      
+      padding-block: 10px;
+    }
+   .text_about{
+     font-size: 20px;
+   }
     }
 
+ @media only screen and (max-width: 375px) {
+  .navbar ul li{
+    font-size: .5rem;
+   }
+ }    
 
 
 
- /* About Me */
- #about{
-     display: flex;
-     flex-direction: column;
- }
- #pb{
-     display: flex;
-     flex-direction: column;
- }
- .btn {
-    background-color: #ddd;
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #3e8e41;
-    color: white;
-  }
+
+  /* Footer */
+    .footer{
+      height: 80px;
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: auto;
+      bottom: 0px;}

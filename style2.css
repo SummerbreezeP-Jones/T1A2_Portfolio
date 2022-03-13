@@ -1,12 +1,13 @@
- *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      } 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+     
+  
       /* navigation bar */
     .navbar{
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5);
@@ -20,7 +21,7 @@
      margin: 20px 0px;
      }
      .navbar ul li{
-          font-family: century;
+         font-family: 'Noto Serif Display', serif;
           font-size: 1rem;
           font-weight: bold;
     
@@ -37,41 +38,51 @@
         box-shadow: 0 0 10px green; 
     }
     
-    body {
-        font-family: "Quicksand", sans-serif;
-        display: grid;
-        place-items: center;
-        height: 100vh;
-        background: 
+    .headings{
+    font-family: century;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0px;
+    color:white;
+    }
+
+    
+      #blogs{
+          background: url('img/tintednewspaper.jpg')
+       /* display: flex;
+      justify-content: center;
+      align-content: center; */
       }
-      
-      .container {
+
+
+      .blog_containers{
+        Border: white;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        max-width: 1200px;
-        margin-block: 2rem;
+        flex-wrap: wrap;
         gap: 2rem;
+        
       }
       
-      img {
-        max-width: 100%;
-        display: block;
-        object-fit: cover;
-      }
       
-      .card {
+      .blog_card {
         display: flex;
         flex-direction: column;
-        width: clamp(20rem, calc(20rem + 2vw), 22rem);
-        overflow: hidden;
-        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-        border-radius: 1em;
+        width: 270px;
+        height: auto;
+        box-shadow: 10px black;
+        border-radius: 2em;
         background: #ECE9E6;
-      background: linear-gradient(to right, #158346, #0e4434);
+        
       
       }
-      
+      .card__image{
+        width: 100%;
+        height:fit-content;
+        border-radius: 2em;
+        /* display: block;
+        object-fit: cover; */
+      }
       
       .card__body {
         padding: 1rem;
@@ -81,31 +92,120 @@
       }
       
       
-      
-      
-      
       .card__body h4 {
         font-size: 1.5rem;
         text-transform: capitalize;
+        font-family: 'Noto Serif Display', serif;
       }
       
-      .card__footer {
-        display: flex;
-        padding: 1rem;
-        margin-top: auto;
-      }
-      
-      .ion-icon{
+    
+       .ion-icon{
         color:green;
         vertical-align: middle;
         font-size: 1.2rem;
         margin-right: .5rem;
         }
        
-        .readmore .btn{
+        .btn{
           text-decoration: none;
           color: black;
-          font-weight: 400;  
+          font-weight: 400;
+          padding: 15px;
+        
+           
+          
         }
+         /* blog post 1 */
+
+         #NatureVsTech{
+             padding: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Open Sans Condensed', sans-serif;
+           }
+
+           body {
+            font-family: Arial;
+           
+            background: #f1f1f1;
+          }
+          
+          /* Header/Blog Title */
+          .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+          }
+          
+          /* Create two unequal columns that floats next to each other */
+          /* Left column */
+          .leftcolumn {
+            float: left;
+            width: 75%;
+          }
+          
+          /* Right column */
+          .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+          }
+          
+          /* Fake image */
+          .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+          }
+          
+          /* Add a card effect for articles */
+          .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Footer */
+          .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+          }
+          
+          /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+              width: 100%;
+              padding: 0;
+            }
+          }
+          
+          
+          
+          .date{
+            color: rgb(6, 8, 9);
+            text-transform:uppercase;
+            letter-spacing:0.2rem;
+          }
+          
+          /* hr{
+              border: 0;
+              height: 1px;
+              background-image: linear-gradient(to right, rgba(44,62,80, 0), rgba(44,62,80, 0.75), rgba(44,62,80, 0));
+          } */
+          
+          .post{
+            margin-bottom:20px;
+          }
+          
+           
 
  

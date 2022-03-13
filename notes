@@ -106,8 +106,10 @@ display: grid;
 
 
 
-
-
+         bx shadow 0 .1rem 1rem rgba(0, 0, 0, 0.1
+container: max-width: 1200px;
+margin-block: 2rem;
+gap: 2rem;
 
         .grid{
             display:grid;
