@@ -16,8 +16,6 @@
     top: 0;
    
 }
-
-
 .navbar ul{
  display: flex;
  list-style: none;
@@ -37,23 +35,34 @@
     transition: all 5s ease;
 }
 .navbar ul li a:hover{
-    background-color: white;
+    background-color: #EDFFEB;
     color: black;
     box-shadow: 0 0 10px green; 
 }
  
+
+/* Components for all Pages */
 .headings{
-    font-family: century;
+   font-family: century;
     font-size: 60px;
     text-align: center;
     margin: 40px 0px;
-    color: white;
-    }
+    color: #EDFFEB;
+  text-shadow: 2px 2px black; 
+ }
+ 
+    .footer{
+      height: 80px;
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: auto;
+      bottom: 0px;}
 
 /* Home Section */
  #home{
   background-color:#9DAD83;
-  position: absolute;
+  position: ;
    height: 100%;
      width: 100%;
      z-index: -1;
@@ -85,14 +94,7 @@
  background-size: cover;
  background-repeat: no-repeat; 
 }
- .headings_a{
-   font-family: century;
-    font-size: 60px;
-    text-align: center;
-    margin: 40px 0px;
-    color: white;
-  text-shadow: 2px 2px black; 
- }
+ 
 
  .about_container{
  display: flex;
@@ -103,16 +105,13 @@
  }
 
  .about_card{
-   background-color:rgba(74, 150, 105, 0.5);
+   background-color:#4a966980;
    box-shadow: 5px 5px black;
-   outline-style: solid black;
    display:flex;
    flex-direction: column;
    padding: 20px;
    width: 550px;
    height: 550px;
- 
-
  }
 
 .text_about{
@@ -125,6 +124,17 @@
 .img_about{
   height: auto;
   width: auto;
+}
+ .d.btn{
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.d.btn:hover {
+  background-color: RoyalBlue;
 }
 
  @media only screen and (max-width: 768px) {
@@ -149,11 +159,4 @@
 
 
 
-  /* Footer */
-    .footer{
-      height: 80px;
-      padding: 20px;
-      text-align: center;
-      background: #ddd;
-      margin-top: auto;
-      bottom: 0px;}
+ 
