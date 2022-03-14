@@ -47,6 +47,13 @@
     text-shadow: 2px 2px black; 
     }
 
+    .footer{
+        height: 80px;
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: auto;
+        bottom: 0px;}
     
       #blogs{
           background: url('img/blogpage.jpg')

@@ -56,24 +56,36 @@
       padding: 20px;
       text-align: center;
       background: #ddd;
-      margin-top: auto;
+      margin-top: auto; 
       bottom: 0px;}
 
 /* Home Section */
  #home{
-  background-color:#9DAD83;
-  position: ;
+  background:url('img/hpback.jpg');
+  position: absolute ;
+  background-size: cover;
+  background-repeat: no-repeat; 
    height: 100%;
      width: 100%;
      z-index: -1;
  } 
 
+
+ .h_headings{
+  font-family: century;
+   font-size: 60px;
+   text-align: center;
+   margin: 250px 0px;
+   color: #EDFFEB;
+ text-shadow: 2px 2px black; 
+}
+
   .main{
-  
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   
     
     
   }
@@ -100,6 +112,7 @@
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
+ align-content: center;
  gap: 2rem;
  padding-block: 10px;
  }
@@ -122,10 +135,12 @@
 
 }
 .img_about{
-  height: auto;
-  width: auto;
+  height:fit-content;
+  width: 100%;
 }
- .d.btn{
+ 
+ 
+  .d.btn{
   background-color: DodgerBlue;
   border: none;
   color: white;
@@ -138,9 +153,7 @@
 }
 
  @media only screen and (max-width: 768px) {
-  .img_about{
-    width: auto;
-    }
+  
     .about_container{
       
       padding-block: 10px;
