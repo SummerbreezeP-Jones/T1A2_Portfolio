@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 
@@ -57,7 +58,10 @@
       text-align: center;
       background: #ddd;
       margin-top: auto; 
-      bottom: 0px;}
+      bottom: 0px;
+      font-size: 1rem;
+      font-weight: bold    
+    }
 
 /* Home Section */
  #home{
@@ -72,8 +76,17 @@
 
 
  .h_headings{
-  font-family: century;
+   font-family:'Noto Serif Display', serif;
    font-size: 60px;
+   text-align: center;
+   margin: 250px 0px;
+   color: #EDFFEB;
+ text-shadow: 2px 2px black; 
+}
+
+.h_subheadings{
+   font-family:'Noto Serif Display', serif;
+   font-size: 40px;
    text-align: center;
    margin: 250px 0px;
    color: #EDFFEB;
@@ -82,11 +95,10 @@
 
   .main{
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
-   
-    
+   flex-direction: column;
+   flex-wrap: wrap;
     
   }
 
@@ -100,7 +112,9 @@
   }
 
  /* About & Professional Knowledge Page */
- 
+ html{
+   height: 100%
+ }
  #about{
  background: url('img/polaroid5.jpg');
  background-size: cover;
@@ -110,15 +124,18 @@
 
  .about_container{
  display: flex;
- justify-content: center;
- flex-wrap: wrap;
- align-content: center;
+ justify-content: center; 
+ align-items: center; 
+ flex-flow: column;
+ flex-direction: column;
  gap: 2rem;
- padding-block: 10px;
+ padding-block: 30px;
+ padding-bottom: 100px;
+ min-height: 100%;
  }
 
  .about_card{
-   background-color:#4a966980;
+   background-color: #96B09D; /*#4a966980 */
    box-shadow: 5px 5px black;
    display:flex;
    flex-direction: column;
@@ -127,29 +144,52 @@
    height: 550px;
  }
 
+ .about_card1{
+  background-color: #96B09D; /*#4a966980 */
+  box-shadow: 5px 5px black;
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 550px;
+  height: 550px;
+  flex: 1;
+}
+
+ .about_card1 .text_about{
+  color: white;
+ font-family: 'Gloria Hallelujah', cursive;
+ font-weight: 300;
+ font-size: 15px;
+ padding: 1 px;
+  
+}
+
 .text_about{
   color: white;
+ font-family: 'Gloria Hallelujah', cursive;
  font-weight: 300;
+ font-size: auto;
  padding: 10px;
 
 
 }
 .img_about{
   height:fit-content;
+  overflow:hidden;
   width: 100%;
 }
  
  
-  .d.btn{
-  background-color: DodgerBlue;
+.d_btn{
+  background-color: #96B09D;
   border: none;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
 }
-.d.btn:hover {
-  background-color: RoyalBlue;
+.d_btn:hover {
+  background-color: #07381C;
 }
 
  @media only screen and (max-width: 768px) {
@@ -169,7 +209,12 @@
    }
  }    
 
+  ion-icon{
+   color: #edffeb;
+   font-size: 64px;
+ }
 
-
-
+ ion-icon:hover{
+   color: #4f6956;
+ }
  
