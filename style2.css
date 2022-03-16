@@ -23,7 +23,7 @@
      }
      .navbar ul li{
          font-family: 'Noto Serif Display', serif;
-          font-size: 1rem;
+          font-size: 28px;
           font-weight: bold;
     
      }
@@ -41,6 +41,9 @@
 
     html{
         height: 100%;
+        background:url('img/blogpage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
     }
 
     .headings{
@@ -52,22 +55,19 @@
     text-shadow: 2px 2px black; 
     }
 
-    .footer{
+      footer{
         height: 80px;
         padding: 20px;
         text-align: center;
-        background: #ddd;
+        background: rgba(0, 0, 0, 0.5);
+        color:#EDFFEB;
         margin-top: auto;
         bottom: 0px;}
     
-      #blogs{
-          background: url('img/blogpage.jpg')
-       /* display: flex;
-      justify-content: center;
-      align-content: center; */
-      }
+  
+      
 
-
+         /* container to hold all 5 blog post cards    */
       .blog_containers{
         display: flex;
         justify-content: center;
@@ -90,37 +90,45 @@
         
       
       }
+      /* Image for blog post */
       .card__image{
         width: 100%;
         height:fit-content;
         border-radius: 2em;
-        /* display: block;
-        object-fit: cover; */
+       
       }
       
+       /* Body of Blog Post */
       .card__body {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: .5rem;
       }
-      
-      
-      .card__body h4 {
+    
+
+      /* Title for blog post card */
+       .card__body h4 {
         font-size: 1.5rem;
         text-transform: capitalize;
         font-family: 'Noto Serif Display', serif;
       }
-      
-    
-       .ion-icon{
-        color:rgb(31, 75, 31);
-        vertical-align: middle;
-        font-size: 1.2rem;
-        margin-right: .5rem;
-        }
+
+      /* blog description  */
+      .card_body .p{
+        font-size: 15px;
+        font-family: Noto;
+      }
        
-        .btn{
+       /* Read More  icon */
+          .readmore ion-icon{
+            color: #4f6956;
+            font-size: 16px
+          }
+
+
+          /* Read More hyperlink */
+          .btn{
           text-decoration: none;
           color: black;
           font-weight: 400;
@@ -129,103 +137,48 @@
            
           
         }
-         /* blog post 1 */
 
-         #NatureVsTech{
-             padding: 1px;
-            font-family: 'Montserrat', sans-serif;
-            font-family: 'Open Sans Condensed', sans-serif;
-            background:url('img/lucid.jpg');
-            background-size: cover;
-            background-repeat: no-repeat; 
-           }
-          
-          /* Header/Blog Title */
-          .header {
-            padding: 30px;
-            font-size: 40px;
-            text-align: center;
-            color:#EDFFEB;
-            text-shadow: 2px 2px black;
-          }
-          
          
-          .leftcolumn {
-            float: left;
-            width: 75%;
-          }
           
           
-          .rightcolumn {
+          /* Card for Blog Post */
+           .container_article{
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            min-height: 100%;
+            padding-bottom: 100px;
+
+           }
+    
+          
+          .blog_article{ 
+            background:#4f6956 ;          
+            padding: 2rem;
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
+            
+          }
+          
+          .blog_image_article{
             width: 25%;
-            padding-left: 20px;
+            height: auto;
+          } 
+           .article_body{
+             font-weight:100;
+            color: white;
+            font-size: 20px;
           }
-          
-          /* Fake image */
-          .blog_image {
-            background-color: #aaa;
-            width: 400px;
-            padding: 20px;
+          .blog_img_article5{
+           width: 400px;
+           height: 400px;
           }
-          
-          /* Add a card effect for articles */
-          .card {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            flex-wrap: nowrap;
-            background-color: #D6D6D6;
-            padding: 20px;
-            margin-top: 20px;
-          }
-          p{
-            font-size: 30px;
-            font-family: Noto;
-          }
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          
-          /* Footer */
-          .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-            margin-top: 20px;
-          }
-          
-          /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {
-              width: 100%;
-              padding: 0;
-            }
-          }
-          
-          
-          
-          .date{
-            color: rgb(6, 8, 9);
-            text-transform:uppercase;
-            letter-spacing:0.2rem;
-          }
-          
-          /* hr{
-              border: 0;
-              height: 1px;
-              background-image: linear-gradient(to right, rgba(44,62,80, 0), rgba(44,62,80, 0.75), rgba(44,62,80, 0));
-          } */
-          
-          .post{
-            margin-bottom:20px;
-          }
-          
+
           ion-icon{
             color: #4f6956;
             font-size: 64px;

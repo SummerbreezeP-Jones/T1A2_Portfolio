@@ -1,3 +1,5 @@
+
+/* properties for the whole HTML pages */
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 }
 
 
-/* Navbar */
+/* Navigation bar for both pages */
 
 .navbar{
     display: grid;
@@ -25,7 +27,7 @@
  }
  .navbar ul li{
       font-family: 'Noto Serif Display', serif;
-      font-size: 1rem;
+      font-size: 28px;
       font-weight: bold;
 
  }
@@ -38,9 +40,11 @@
 .navbar ul li a:hover{
     background-color: #EDFFEB;
     color: black;
-    box-shadow: 0 0 10px green; 
+    box-shadow: 0 0 10px rgb(27, 48, 27); 
 }
- 
+
+
+
 
 /* Components for all Pages */
 .headings{
@@ -51,77 +55,96 @@
     color: #EDFFEB;
   text-shadow: 2px 2px black; 
  }
- 
-    .footer{
+ /* footer */
+    footer{
       height: 80px;
       padding: 20px;
       text-align: center;
-      background: #ddd;
+      background: rgba(0, 0, 0, 0.5);
+      color:#EDFFEB;
       margin-top: auto; 
       bottom: 0px;
       font-size: 1rem;
-      font-weight: bold    
+      font-weight: bold;
+      
+    }
+   html{
+      height: 100%
     }
 
 /* Home Section */
  #home{
   background:url('img/hpback.jpg');
-  position: absolute ;
+ 
   background-size: cover;
   background-repeat: no-repeat; 
    height: 100%;
      width: 100%;
      z-index: -1;
  } 
+ /* body */
+ body {
+  width: auto;
+  height: auto;
+  /* font-size: 18px; */
+  font-family: "Noto Sans";
+}
+/* header for the title */
+#home_header {
+  /* width: 100vw; */
+  height: 100vh;
+  box-shadow: 3px 3px 2px #bebebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 
-
- .h_headings{
-   font-family:'Noto Serif Display', serif;
-   font-size: 60px;
-   text-align: center;
-   margin: 250px 0px;
-   color: #EDFFEB;
- text-shadow: 2px 2px black; 
 }
 
-.h_subheadings{
-   font-family:'Noto Serif Display', serif;
-   font-size: 40px;
-   text-align: center;
-   margin: 250px 0px;
-   color: #EDFFEB;
- text-shadow: 2px 2px black; 
+#home_title {
+  font-size: 3.5em;
 }
 
-  .main{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   flex-wrap: wrap;
-    
-  }
+#home_text {
+  font-size: 1.3em;
+  margin-top: 2%;
+}
 
+#home_button {
+  border: solid 2px white;
+  background-color: inherit;
+  color: white;
+  margin-top: 6%;
+  width: 25%;
+  height: 55px;
+  font-size: 15px;
+  border-radius: 10px;
+}
 
- 
-
-  @media screen and (Max-width: 600px) {
+#home_button:hover {
+  cursor: pointer;
+}
+@media screen and (Max-width: 600px) {
     .headings{
      font-size: 40px;
     }
   }
 
+ 
+
+  
+
  /* About & Professional Knowledge Page */
- html{
-   height: 100%
- }
+ 
+ /*background for about */
  #about{
- background: url('img/polaroid5.jpg');
+ background: url('img/polaroid55.jpg'); /* after I had received feedback from my presentation i changed my background colour to match my colour scheme */
  background-size: cover;
  background-repeat: no-repeat; 
 }
  
-
+/* containing all the content for About page */
  .about_container{
  display: flex;
  justify-content: center; 
@@ -134,9 +157,12 @@
  min-height: 100%;
  }
 
+/* polaroid cards */
  .about_card{
    background-color: #96B09D; /*#4a966980 */
-   box-shadow: 5px 5px black;
+   outline-style: solid;
+   outline-color: black;
+   box-shadow: 7px 5px black;
    display:flex;
    flex-direction: column;
    padding: 20px;
@@ -144,9 +170,12 @@
    height: 550px;
  }
 
+/* about polaroid individual card  */
  .about_card1{
   background-color: #96B09D; /*#4a966980 */
-  box-shadow: 5px 5px black;
+  box-shadow: 0px 0px 10px black;
+  outline-style:solid;
+  outline-color: black;
   display:flex;
   flex-direction: column;
   padding: 20px;
@@ -154,7 +183,7 @@
   height: 550px;
   flex: 1;
 }
-
+ /* about polaroid individual card text */
  .about_card1 .text_about{
   color: white;
  font-family: 'Gloria Hallelujah', cursive;
@@ -163,7 +192,7 @@
  padding: 1 px;
   
 }
-
+/* text for the two remaining polaroid cards */
 .text_about{
   color: white;
  font-family: 'Gloria Hallelujah', cursive;
@@ -173,13 +202,15 @@
 
 
 }
+/* Image for polaroids */
 .img_about{
-  height:fit-content;
+  width: 500px;
+  height: 430px;
   overflow:hidden;
-  width: 100%;
+  
 }
  
- 
+ /* download button for my CV */
 .d_btn{
   background-color: #96B09D;
   border: none;
@@ -192,6 +223,18 @@
   background-color: #07381C;
 }
 
+  
+
+  ion-icon{
+   color: #edffeb;
+   font-size: 64px;
+ }
+
+ ion-icon:hover{
+   color: #4f6956;
+ }
+ 
+ /* Media Queries */
  @media only screen and (max-width: 768px) {
   
     .about_container{
@@ -203,18 +246,11 @@
    }
     }
 
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-width: 320px) {
   .navbar ul li{
     font-size: .5rem;
    }
- }    
-
-  ion-icon{
-   color: #edffeb;
-   font-size: 64px;
- }
-
- ion-icon:hover{
-   color: #4f6956;
- }
- 
+  .about_container{
+   display:
+  }
+ }  
