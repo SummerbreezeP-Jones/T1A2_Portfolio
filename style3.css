@@ -39,75 +39,99 @@
     }
 
    /* components for both pages */
-    .headings{
-        font-family: century;
-         font-size: 60px;
-         text-align: center;
-         margin: 40px 0px;
-         color: #EDFFEB;
-       text-shadow: 2px 2px black; }
-
-       .footer{
-        height: 80px;
-        padding: 20px;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        color:#EDFFEB;;
-        margin-top: auto;
-        font-size: 1rem;
-        font-weight: bold;
-        bottom: 0px;}
-
-        html{
-            height:100%;
-            font-family: 'Noto Serif Display', serif;
-
-        }
-
-
-     #projects{
-        background:url('img/whiteclouds.jpg')
-    }  
-    
-    .project_container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-    .project_img{
-       width: 500px;
-       height: 500px; 
-    }
-
-
-    /*contact*/
-
-    #contact{
-    background:url('img/updatedcontact.jpg')center;
-     font-family: Arial, Helvetica, sans-serif;
-     background-size: cover ;
-     background-repeat: no-repeat
-     paddingL 40px 0;
-    }
-
-
- .c_heading{
+     
+   /* heading */
+   .heading{
     font-family: century;
     font-size: 40px;
     text-align: center;
-    /* margin: 40px 0px; */
     color:#EDFFEB;
     text-shadow: 4px 2px black;
  }
-
+   /*sub heading  */
  .sub_heading{
-    font-family: century;
     font-size: 20px;
     text-align: center;
     color:#EDFFEB;
     text-shadow: 2px 2px black; 
  }
+
+.footer{
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color:#EDFFEB;;
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 0px;}
+
+html{
+    height:100%;
+    font-family: 'Noto Serif Display', serif;
+
+        }
+
+
+#projects{
+    background:url('img/whiteclouds.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }  
+    
+.project_container{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    gap: 2rem;
+    min-height: 100%;
+    padding-bottom: 100px;
+
+  
+    /* gap: 2rem; */
+    }
+
+    /* project image sample */
+.project_img{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-self: center; 
+    }
+
+.skillset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+      }
+    
+.skillset li{
+    min-width: 200px;
+    color:#4f6956;
+    font-size: 20px;
+    text-align: center;
+      }
+
+
+    /*contact*/
+
+#contact{
+    background:url('img/updatedcontact.jpg')center;
+     font-family: Arial, Helvetica, sans-serif;
+     background-size:cover;
+        background-position:center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+   
+    }
+
+
+     
 
  .contact_form{
      min-height:100%;

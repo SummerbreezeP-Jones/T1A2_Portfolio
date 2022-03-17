@@ -75,9 +75,10 @@
 /* Home Section */
  #home{
   background:url('img/hpback.jpg');
- 
-  background-size: cover;
-  background-repeat: no-repeat; 
+  background-size:cover;
+        background-position:center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
    height: 100%;
      width: 100%;
      z-index: -1;
@@ -141,7 +142,9 @@
  #about{
  background: url('img/polaroid55.jpg'); /* after I had received feedback from my presentation i changed my background colour to match my colour scheme */
  background-size: cover;
- background-repeat: no-repeat; 
+background-position:center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;; 
 }
  
 /* containing all the content for About page */
