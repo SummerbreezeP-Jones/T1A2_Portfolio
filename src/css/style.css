@@ -80,7 +80,7 @@
 
 /* Home Section */
  #home{
-  background:url('img/hpback.jpg');
+  background:url('../img/hpback.jpg');
   background-size:cover;
         background-position:center;
             background-repeat: no-repeat;
@@ -143,7 +143,7 @@
  
  /*background for about */
  #about{
- background: url('img/polaroid55.jpg'); /* after I had received feedback from my presentation i changed my background colour to match my colour scheme */
+ background: url('../img/polaroid55.jpg'); /* after I had received feedback from my presentation i changed my background colour to match my colour scheme */
  background-size: cover;
 background-position:center;
             background-repeat: no-repeat;
@@ -178,7 +178,7 @@ background-position:center;
    outline-color: black;
    box-shadow: 7px 5px rgba(0, 0, 0, 0.5);
    padding: 20px;
-   width: 550px;
+   width: 500px;
    height: auto;
  }
 
@@ -189,7 +189,7 @@ background-position:center;
   outline-style:solid;
   outline-color: black;
   padding: 20px;
-  width: 550px;
+  width: 500px;
   height: auto;
   
 }
@@ -214,7 +214,7 @@ background-position:center;
 }
 /* Image for polaroids */
 .img_about{
-  width: 500px;
+  width: 450px;
   height: 430px;
   
   
@@ -283,7 +283,6 @@ background-position:center;
    padding: 8px  10px;
   }
 }
- 
 
  /* tablet */
  @media only screen and (min-width: 635px) and (max-width: 992px){

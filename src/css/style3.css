@@ -72,7 +72,7 @@ html{
 
 /* projects backgroundpage */
 #projects{
-    background:url('img/whiteclouds.jpg');
+    background:url('../img/whiteclouds.jpg');
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
