@@ -7,10 +7,10 @@ https://github.com/SummerbreezePaku/T1A2_Portfolio
 ---
 
 ## Purpose
-The purpose of my portfolio website is to showcase my talent and coding experience for potential employers in the web dev world. To be able to show my work ethics and coding skills as a beginner I worked tirelessly to create the best portfolio website I could in hopes the potential employer can see how much effort Im willing to try and learn. With my creative design I am hoping to showcase my talent to a high-end design company that constantly lookin for innovation and creativity..
+The purpose of my portfolio website is to showcase my talent and coding experience for potential employers in the web dev world. To be able to show my work ethics and coding skills as a beginner I worked tirelessly to create the best portfolio website I could in hopes the potential employer can see how much effort Im willing to put into my work and learn from my errors. With my creative design I am hoping to showcase my talent to a high-end design company that are constantly lookin for innovation in creativity.
 
 ## Functionality
-My main goal in my portfolio website, was to create a functional website and showcase my creative skills but also  the viewer are able to see samples of my work, read my blogs or professional background and get in contact with me easily in one site.
+My main goal in my portfolio website, was to create a functional website but also  the viewer are able to see samples of my work, read my blogs or professional background and get in contact with me easily in one site.
 
 ## Features
 - **Responsiveness** that expands the view of the website it different formats such as a phone(320px-634px), tablet(635px-992px) or desktop(993px-1200px). 
@@ -39,6 +39,7 @@ below are screenshots of a desktop view of my portfolio. Docs folder contain the
 ![about_page2](docs/aboutpt2_desktopview.png)
 ![about_page3](docs/aboutpt3_desktopview.png)
 ![blogs_page](docs/blogs_desktopview.png)
+![blogspost_page](docs/blogpost_desktopview.png)
 ![blogs_page2](docs/blogspt2_desktopview.png)
 ![projects_page](docs/projects_desktopview.png)
 ![contact_page](docs/contact_desktopview.png)
@@ -53,5 +54,5 @@ The targeted audience is ideally an IT professional employer seeking a web devel
  - Netlify
 
 ## Reflection
-There were many parts of my assignment I didnt fully understand but I am willing to reflect and learn from it. There were some pages in my website I was unable to make responsive as I would have liked but I gave it a go and did  the best I could. Upon reflection I undestand I didnt fully understand the concept of mobile first design, which is fine and a great learning experience for next time. As this is my first ever experience creating a website, I am happy and content with what i've done and look forward to learn from my feedback.
+There were many parts of my assignment I didnt fully understand but I am willing to reflect and learn from it. There were some pages in my website I was unable to make responsive  to the expectation I would have liked but I gave it a go and did  the best I could. Upon reflection I undestand now that I didnt fully understand the concept of mobile first design, which is fine and a great learning experience for me. As this is my first ever experience creating a website, I am happy and content with what i've done and look forward to learn from my feedback.
 
