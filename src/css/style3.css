@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
    
        
   } 
   /* components styling for both project and contact pages */
+
       /* navigation bar */
     .navbar{
         display: flex;
@@ -39,21 +41,23 @@
         box-shadow: 0 0 10px green; 
     }
 
-   
+   /*headings  */
    .heading{
     font-size: 40px;
+    font-family:'Noto Serif Display', serif, 'Courier New', Courier, monospace;
     text-align: center;
-    color:#EDFFEB;
-    text-shadow: 4px 2px black;
+    color:#07381C;
+    
  }
   
  .sub_heading{
     font-size: 20px;
+    font-family:'Noto Serif Display', serif, 'Courier New', Courier, monospace;
     text-align: center;
-    color:#EDFFEB;
-    text-shadow: 2px 2px black; 
+    color:#07381C;
+    
  }
-
+/* footer */
 footer{
     height: 80px;
     padding: 20px;
@@ -61,10 +65,11 @@ footer{
     background: #292725;
     color:#EDFFEB;
     margin-top: auto;
-    font-size: 18px;}
+    font-size: 18px}
 
+/* html pages */
 html{
-    height:100%;
+    height:auto;
     
    }
 
@@ -77,12 +82,13 @@ html{
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
     }  
-    
+/* projects contaier for img sample */
 .project_container{
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction:row;
     gap: 2rem;
     min-height: 100%;
     padding-bottom: 100px;
@@ -104,7 +110,7 @@ html{
 
     /* background image */
 #contact{
-    background:url('img/updatedcontact.jpg')center;
+    background:url('../img/updatedcontact.jpg')center;
      background-size:cover;
         background-position:center;
             background-repeat: no-repeat;
@@ -114,10 +120,10 @@ html{
 
 
      
-/* contact form */
+/* contact form  contents*/
  .contact_form{
      min-height:100%;
-     max-width: 600px;
+     max-width: 700px;
      margin: auto;
      padding: 0 10px;
      overflow: auto;
@@ -145,7 +151,7 @@ html{
      resize: none;
      height: 120px;
  }
-
+/* contact form button */
  .contact_form_btn{
      display: flex;
      align-items:center;
@@ -162,6 +168,8 @@ html{
      color: #EDFFEB;
 
  }
+
+ 
 /* social Media Icons */
  ion-icon{
     color: #edffeb;
@@ -196,7 +204,27 @@ html{
      width: 80%;
      height: 80%;
   }
-}       
+  ion-icon{
+    font-size:32px;
+  }
+  footer{
+ font-size: 10px;
+  } 
+.project_container{
+    display: flex;
+    flex-direction: column;
+}
+}  
+
+/* tablet */
+@media only screen and (min-width: 635px) and (max-width: 992px){
+    footer{
+        font-size: 10px;}
+        .project_container{
+            display: flex;
+            flex-direction:column;
+         }
+        }                              
 
 
 
